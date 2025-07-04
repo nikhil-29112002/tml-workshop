@@ -1,9 +1,9 @@
 from google.adk.agents import LlmAgent
 from google.adk.tools.agent_tool import AgentTool
 
-from models import claude
-from prompts import master
-from sub_agents import ingestion, validation, notification
+from app.models import claude
+from app.prompts import master
+from app.sub_agents import ingestion, validation, notification
 
 
 service_agent = LlmAgent(
