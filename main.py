@@ -14,8 +14,8 @@ service_agent = LlmAgent(
     output_key="response",
     tools=[
         AgentTool(agent=ingestion.ingestion_agent),
-        AgentTool(agent=ingestion.validation_agent),
-        AgentTool(agent=ingestion.notification_agent),
+        AgentTool(agent=validation.validation_agent),
+        AgentTool(agent=notification.notification_agent),
     ],
 )
 
