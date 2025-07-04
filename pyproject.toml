@@ -5,8 +5,10 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "boto3>=1.39.3",
     "google-adk>=1.5.0",
     "google-cloud-aiplatform[adk,agent-engines]>=1.101.0",
     "google-genai>=1.24.0",
+    "litellm>=1.73.6.post1",
     "pydantic>=2.11.7",
 ]

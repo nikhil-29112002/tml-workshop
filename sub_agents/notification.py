@@ -1,9 +1,8 @@
 from google.adk import Agent
 
+from models import claude
 from prompts import notification
 
-MODEL = "gemini-2.5-pro"
-
 notification_agent = Agent(
-    model=MODEL, name="notification agent", instruction=notification.prompt
+    model=claude, name="notification_agent", instruction=notification.prompt
 )

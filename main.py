@@ -1,15 +1,14 @@
 from google.adk.agents import LlmAgent
 from google.adk.tools.agent_tool import AgentTool
 
+from models import claude
 from prompts import master
 from sub_agents import ingestion, validation, notification
 
-MODEL = "gemini-2.5-pro"
-
 
 service_agent = LlmAgent(
-    name="master agent for corrdinating",
-    model=MODEL,
+    name="master_agent",
+    model=claude,
     instruction=master.prompt,
     output_key="response",
     tools=[
