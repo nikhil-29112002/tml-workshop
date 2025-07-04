@@ -9,7 +9,7 @@ async def get_renewed_subscriptions():
 
     """
     response = requests.get(
-        "https://skindev-new-pv.api.tatamotors/api/cvp_demo/get/cvp_demo/data/renewal/"
+        "https://skindev-new-pv.api.tatamotors/api/cvp_demo/data/update_renewal_data/"
     )
     data = response.json()
     records.set(data)

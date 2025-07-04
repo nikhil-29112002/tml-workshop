@@ -22,7 +22,7 @@ def sync_subscription():
     fixed_records = list(map(fix_record, records))
 
     requests.post(
-        "https://skindev-new-pv.api.tatamotors/api/cvp_demo/get/cvp_demo/data/renewal/",
+        "https://skindev-new-pv.api.tatamotors/api/cvp_demo/data/update_renewal_data/",
         json=fixed_records,
     )
 
