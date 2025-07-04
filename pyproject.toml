@@ -1,0 +1,12 @@
+[project]
+name = "ai"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "google-adk>=1.5.0",
+    "google-cloud-aiplatform[adk,agent-engines]>=1.101.0",
+    "google-genai>=1.24.0",
+    "pydantic>=2.11.7",
+]
