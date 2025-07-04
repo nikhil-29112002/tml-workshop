@@ -18,7 +18,8 @@ def fix_record(record):
 
 
 def sync_subscription():
-    records = invalid_records.get()
+    "This fixes the subscriptions that are out of sync"
+    records = invalid_records["data"]
     fixed_records = list(map(fix_record, records))
 
     requests.post(

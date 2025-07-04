@@ -20,9 +20,9 @@ async def validate_subscriptions():
     """
     This tool validates renewed subscriptions
     """
-    data = records.get()
+    data = records["data"]
     filtered_data = list(filter(_validate_record, data["data"]))
-    invalid_records.set(filtered_data)
+    invalid_records["data"] = filtered_data
 
     return f"Number of invalid records {len(filtered_data)}"
 
