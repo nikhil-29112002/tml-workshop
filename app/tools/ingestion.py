@@ -17,4 +17,4 @@ async def get_renewed_subscriptions():
     return f"received records {len(data)}"
 
 
-get_subscription_renewal = FunctionTool(get_renewed_subscriptions)
+get_renewed_subscriptions_tool = FunctionTool(get_renewed_subscriptions)
