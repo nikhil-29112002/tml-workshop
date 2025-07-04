@@ -4,5 +4,8 @@ from app.models import claude
 from app.prompts import notification
 
 notification_agent = Agent(
-    model=claude, name="notification_agent", instruction=notification.prompt
+    model=claude,
+    name="notification_agent",
+    instruction=notification.prompt,
+    description="You are an llm agent",
 )

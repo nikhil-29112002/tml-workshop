@@ -9,6 +9,7 @@ from app.sub_agents import ingestion, validation, notification
 service_agent = LlmAgent(
     name="master_agent",
     model=claude,
+    description="You are an llm agent",
     instruction=master.prompt,
     output_key="response",
     tools=[
